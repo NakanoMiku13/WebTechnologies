@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <style>
+            .space{
+                padding-top: 5px;
+            }
+            .spaceRight{
+                padding-right: 15px;
+            }
+            .spaceLeft{
+                padding-left: 3px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="align-center">Sistema de Cramer 3x3</h1>
+            <div class="col-12">
+                <form method="POST" action="TableCreator">
+                    <div class="row">
+                        <div class="col">
+                            <label>Size</label>
+                            <input type="number" name="size" required placeholder="Size" class="form-control"/>
+                        </div>
+                        <div class="col">
+                            <label>Select an option</label>
+                            <select name="option" class="form-control">
+                                <option value="" selected disabled>---Select an option---</option>
+                                <option value="autoFill">Auto Fill</option>
+                                <option value="manualFill">Manual Fill</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="btn-group space">
+                        <button type="submit" class="btn btn-outline-success">Subir</button>
+                        <button type="reset" class="btn btn-outline-danger">Limpiar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        
+    </body>
+</html>
