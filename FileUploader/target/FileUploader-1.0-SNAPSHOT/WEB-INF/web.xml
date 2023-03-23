@@ -19,9 +19,21 @@
         <servlet-name>ViewFiles</servlet-name>
         <servlet-class>webdevelopment.fileuploader.ViewFiles</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>DownloadFile</servlet-name>
+        <servlet-class>webdevelopment.fileuploader.DownloadFile</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RemoveFile</servlet-name>
+        <servlet-class>webdevelopment.fileuploader.RemoveFile</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>FileUploader</servlet-name>
         <url-pattern>/FileUploader</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewFiles</servlet-name>
+        <url-pattern>/ViewFiles</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>FileForm</servlet-name>
@@ -33,7 +45,15 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>ViewFiles</servlet-name>
-        <url-pattern></url-pattern>
+        <url-pattern/>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DownloadFile</servlet-name>
+        <url-pattern>/DownloadFile</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RemoveFile</servlet-name>
+        <url-pattern>/RemoveFile</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
